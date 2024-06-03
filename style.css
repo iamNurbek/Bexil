@@ -78,3 +78,8 @@
 #title-bar img {
   height: 30px;
 }
+
+#title-bar img:hover {
+  transform: scale(1.3);
+  transition: transform 0.2s ease;
+}
