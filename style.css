@@ -10,8 +10,8 @@
 }
 
 #title-bar {
-    display: flex;
-    padding: 10px 0;
+  display: flex;
+  padding: 10px 0;
 }
 
 #messages {
@@ -76,6 +76,5 @@
 }
 
 #title-bar img {
-    height: 30px;
-    border: 1px solid black;
+  height: 30px;
 }
