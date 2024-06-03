@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bexil</title>
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="resetStyle.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <input type="color" id="colorPicker" value="#000000" />
-      <button id="clearCanvas">Clear Canvas</button>
-      <button id="fillCanvas">Fill Canvas</button>
-      <button id="eraser">Eraser</button>
-      <select id="gridSize">
-        <option value="20">20x20</option>
-        <option value="30" selected>30x30</option>
-        <option value="40">40x40</option>
-      </select>
+    <div id="chat-container">
+      <div id="title-bar">
+        <div id="closeButton"><img src="close.png" /></div>
+        <div id="minimizeButton"><img src="min.png" /></div>
+        <div id="maximizeButton"><img src="max.png" /></div>
+      </div>
+      <div id="messages"></div>
+      <input
+        type="text"
+        id="message-input"
+        placeholder="Type your message here..."
+      />
+      <button id="send-button">Send</button>
+      <button id="del-button">Del</button>
     </div>
-    <div class="canvas"></div>
-    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
